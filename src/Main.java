@@ -19,7 +19,7 @@ public class Main {
             }
             long elapsedTime = System.nanoTime() - startTime;
             double seconds = (double)elapsedTime / 1_000_000_000.0;
-            System.out.println("Toplam gecen sure (milisaniye): " + seconds);
+            System.out.println("Toplam gecen sure (milisaniye):  " + seconds);
         }
     }
 }
