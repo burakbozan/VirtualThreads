@@ -3,15 +3,15 @@ import java.util.concurrent.Executors;
 
 public class Main {
     public static void main(String[] args) {
-        try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
-        //try (ExecutorService executor = Executors.newThreadPerTaskExecutor(Thread::new)) {
+        //try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
+        try (ExecutorService executor = Executors.newThreadPerTaskExecutor(Thread::new)) {
             long startTime = System.nanoTime();
-            for (int j = 0; j < 4000; j++) {
-                int square = j;
+            for (int i = 0; i < 4000; i++) {
+                int sqrt = i;
                 executor.submit(() -> {
                     try {
                         Thread.sleep(1000);
-                        int result = square * square;
+                        int result = (int) Math.sqrt(sqrt);
                     } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
                     }
