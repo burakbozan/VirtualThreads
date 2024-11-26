@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c141b97b-f2f1-4b00-b141-6b42c9a475bb)# VirtualThreads
+# VirtualThreads
 
 - https://www.infoworld.com/article/3678148/intro-to-virtual-threads-a-new-approach-to-java-concurrency.html
 
@@ -22,7 +22,6 @@ With the Digital Onboarding for Legal Project, there will be the following contr
 - Making CDD by obtaining the required information
 Application Architecture
 <img width="275" alt="image" src="https://github.com/user-attachments/assets/efa2a171-b195-4f9c-bcd6-a7ce6ab5ff0d">
-
 Data at Rest and in Motion
 Data stored on Oracle databases for the applications. Cyberark password wallet are using to store passwords of NPA users for DB
 connection. All client and APIs are using TLS on their connections. Data is securely handling and compatible with minimum security
